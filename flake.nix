@@ -5,6 +5,11 @@
     nixpkgs.url = "github:NixOS/nixpkgs/release-22.11";
     utils.url = "github:numtide/flake-utils";
     yarn2nix.url = "github:input-output-hk/yarn2nix";
+    sbt-hook = {
+      url = "github:MonikaJassova/sbt-nix?dir=sbt-hook";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "utils";
+    };
   };
 
   outputs = {
@@ -12,16 +17,18 @@
     nixpkgs,
     yarn2nix,
     utils,
+    sbt-hook,
     ...
   }:
     utils.lib.eachDefaultSystem (
       system: let
         pkgs = nixpkgs.legacyPackages.${system}.extend yarn2nix.overlay;
+        sbt = sbt-hook.packages.${system}.default;
       in
         rec {
           # nix develop shell
           devShells.default = pkgs.mkShell {
-            packages = [pkgs.nodejs-16_x pkgs.yarn pkgs.which];
+            packages = [pkgs.nodejs-16_x pkgs.yarn pkgs.which sbt];
           };
         }
     );

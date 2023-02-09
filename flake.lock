@@ -33,8 +33,60 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
+        "sbt-hook": "sbt-hook",
         "utils": "utils",
         "yarn2nix": "yarn2nix"
+      }
+    },
+    "sbt-derivation": {
+      "inputs": {
+        "flake-utils": [
+          "sbt-hook",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "sbt-hook",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1670683679,
+        "narHash": "sha256-6SNkggK5ki8iulmaAAYr8uOxbwxUpp6DD8bVM2Cv5Q0=",
+        "owner": "zaninime",
+        "repo": "sbt-derivation",
+        "rev": "847f28faf9d72d4f312dc20728994453bb250604",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zaninime",
+        "repo": "sbt-derivation",
+        "type": "github"
+      }
+    },
+    "sbt-hook": {
+      "inputs": {
+        "flake-utils": [
+          "utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "sbt-derivation": "sbt-derivation"
+      },
+      "locked": {
+        "dir": "sbt-hook",
+        "lastModified": 1675286854,
+        "narHash": "sha256-3hRIncRSjBis4tTj8qmszQ/usNTVKV0StxgEhho0h2U=",
+        "owner": "MonikaJassova",
+        "repo": "sbt-nix",
+        "rev": "b922a4fd18b2960f1c9d5b2004877c2e0f4ed122",
+        "type": "github"
+      },
+      "original": {
+        "dir": "sbt-hook",
+        "owner": "MonikaJassova",
+        "repo": "sbt-nix",
+        "type": "github"
       }
     },
     "utils": {
