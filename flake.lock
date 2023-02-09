@@ -50,11 +50,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1670683679,
-        "narHash": "sha256-6SNkggK5ki8iulmaAAYr8uOxbwxUpp6DD8bVM2Cv5Q0=",
+        "lastModified": 1675083208,
+        "narHash": "sha256-+sSFhSpV2jckr1qYlX/SaxQ6IdpagD6o4rru/3HAl0I=",
         "owner": "zaninime",
         "repo": "sbt-derivation",
-        "rev": "847f28faf9d72d4f312dc20728994453bb250604",
+        "rev": "92d6d6d825e3f6ae5642d1cce8ff571c3368aaf7",
         "type": "github"
       },
       "original": {
@@ -75,11 +75,11 @@
       },
       "locked": {
         "dir": "sbt-hook",
-        "lastModified": 1675286854,
-        "narHash": "sha256-3hRIncRSjBis4tTj8qmszQ/usNTVKV0StxgEhho0h2U=",
+        "lastModified": 1675966456,
+        "narHash": "sha256-s8Px88GyWkaUxOL/r5yn3mnJ+SBkXl4w6exJ31d4VRo=",
         "owner": "MonikaJassova",
         "repo": "sbt-nix",
-        "rev": "b922a4fd18b2960f1c9d5b2004877c2e0f4ed122",
+        "rev": "8d9e6d6cf3c62088cd98a9f906782b5d3c33cb0d",
         "type": "github"
       },
       "original": {
