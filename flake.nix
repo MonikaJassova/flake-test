@@ -2,7 +2,7 @@
   description = "Renovate flake test";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/release-22.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/release-22.11";
     utils.url = "github:numtide/flake-utils";
     yarn2nix.url = "github:input-output-hk/yarn2nix";
   };
