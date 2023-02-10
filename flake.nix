@@ -10,6 +10,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "utils";
     };
+    midnight-e2e-tests = {
+      url = "github:input-output-hk/midnight-e2e-tests";
+      inputs.utils.follows = "utils";
+    };
   };
 
   outputs = {
@@ -18,6 +22,7 @@
     yarn2nix,
     utils,
     sbt-hook,
+    midnight-e2e-tests,
     ...
   }:
     utils.lib.eachDefaultSystem (
