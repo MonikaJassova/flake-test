@@ -33,7 +33,7 @@
         rec {
           # nix develop shell
           devShells.default = pkgs.mkShell {
-            packages = [pkgs.nodejs-16_x pkgs.yarn pkgs.which sbt];
+            packages = [pkgs.nodejs-16_x pkgs.yarn pkgs.which sbt pkgs.cargo];
           };
         }
     );

@@ -1,2 +1,7 @@
+[package]
+name = "cargo-test"
+version = "0.0.1"
+edition = "2021"
+
 [dependencies]
 zkir = { git = "https://github.com/input-output-hk/abcirdc.git", branch = "tkerber/coin-structure" }
