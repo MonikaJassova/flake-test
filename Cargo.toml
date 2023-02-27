@@ -1,0 +1,2 @@
+[dependencies]
+zkir = { git = "https://github.com/input-output-hk/abcirdc.git", branch = "tkerber/coin-structure" }
