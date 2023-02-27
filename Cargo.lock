@@ -592,6 +592,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "minimal-lexical"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "68354c5c6bd36d73ff3feceb05efa59b6acb7626617f4962be322a825e61f79a"
+
+[[package]]
+name = "nom"
+version = "7.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d273983c5a657a70a3e8f2a01329822f3b8c8172b73826411a55751e404a0a4a"
+dependencies = [
+ "memchr",
+ "minimal-lexical",
+]
+
+[[package]]
 name = "num-bigint"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -674,7 +690,7 @@ checksum = "e0a7ae3ac2f1173085d398531c705756c94a4c56843785df85a60c1a0afac116"
 [[package]]
 name = "plonk"
 version = "0.8.2"
-source = "git+https://github.com/iamnotacake/plonk.git?rev=b946bfb4eeb7965fcfedd0550f7ac84f943a7631#b946bfb4eeb7965fcfedd0550f7ac84f943a7631"
+source = "git+https://github.com/iamnotacake/plonk.git?rev=fc7d4e4513cd947832a8cce257a6483e20954d69#fc7d4e4513cd947832a8cce257a6483e20954d69"
 dependencies = [
  "plonk-core",
  "plonk-hashing",
@@ -683,7 +699,7 @@ dependencies = [
 [[package]]
 name = "plonk-core"
 version = "0.1.0"
-source = "git+https://github.com/iamnotacake/plonk.git?rev=b946bfb4eeb7965fcfedd0550f7ac84f943a7631#b946bfb4eeb7965fcfedd0550f7ac84f943a7631"
+source = "git+https://github.com/iamnotacake/plonk.git?rev=fc7d4e4513cd947832a8cce257a6483e20954d69#fc7d4e4513cd947832a8cce257a6483e20954d69"
 dependencies = [
  "ark-bls12-381",
  "ark-ec",
@@ -705,7 +721,7 @@ dependencies = [
 [[package]]
 name = "plonk-hashing"
 version = "0.8.2"
-source = "git+https://github.com/iamnotacake/plonk.git?rev=b946bfb4eeb7965fcfedd0550f7ac84f943a7631#b946bfb4eeb7965fcfedd0550f7ac84f943a7631"
+source = "git+https://github.com/iamnotacake/plonk.git?rev=fc7d4e4513cd947832a8cce257a6483e20954d69#fc7d4e4513cd947832a8cce257a6483e20954d69"
 dependencies = [
  "ark-crypto-primitives",
  "ark-ec",
@@ -1119,8 +1135,8 @@ dependencies = [
 
 [[package]]
 name = "zkir"
-version = "0.2.5"
-source = "git+https://github.com/input-output-hk/abcirdc.git?branch=tkerber/coin-structure#785388c6061908609377e9b7331d00eca8694826"
+version = "0.1.0"
+source = "git+https://github.com/input-output-hk/abcirdc.git?branch=tmp-for-testing#7e9a6f6b28b926dff51fb57686c48d784aa9bfe9"
 dependencies = [
  "anyhow",
  "ark-bls12-381",
@@ -1134,11 +1150,11 @@ dependencies = [
  "env_logger",
  "hex",
  "log",
+ "nom",
  "num-traits",
  "once_cell",
  "plonk",
  "rand",
- "rand_chacha",
  "rand_core",
  "serde",
  "serde_json",
