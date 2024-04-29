@@ -30,9 +30,18 @@
   },
   "docker-compose": {
     "fileMatch": [
-      "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$", "\\w+\\.mjs"
+      "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"
     ]
   },
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["\\w+\\.mjs"],
+      "matchStrings": ["new GenericContainer('?<currentValue>.*?')"],
+      "depNameTemplate": "docker",
+      "datasourceTemplate": "docker"
+    }
+  ],
   "lockFileMaintenance": { 
     "enabled": true 
   },
