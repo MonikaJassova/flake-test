@@ -12,10 +12,21 @@
       "encrypted": {
         "token": "wcFMA/xDdHCJBTolAQ//cMYpGIrMIFMSPSdzmLX2ZmkB5qiT/RddaBVoDtJ+U2493Ips9dgDxuZGmfeP2xwGsBdbH6cOnk1ZVm4P8aLd6kH4O7Z3SBhVnaes8L6cH9e575GRd68GfLNXbp0BTEwuIpG9hYzGCl25glhNdH1shkRiVuEXiCNwMB+7upWyRA5tL/2JbbgU3A7bztEpeNMlRTpFNrK8ltLcDUR6EU5MXFTjtSEs/SKdN3PPKqggMxRejnU85OYVh91HIyDUuUBRw5DtibvrMBzhCKRMONCedFHa6seIwVC2/LAz9e6SMdMkou5wNeuCMOOY4vyyEfZCM97vZW6VaDSPXw04mz6dTaJVwWKrhWFyNMRsnRZHGvPmywP+/kJgjA0pjHjPcHoqa5lcdHfTx8xFpGOKkahL3Uk3PHT3FfqFE5uXGH0QSszQpLfOcb3JLCEl+ejpTd8NzGghOMVU7a9Vo8xV1wRjncTgybJCZlZMtz3K+w98r0ZoHVTVH8xbWdy/lr9s0OKg0OpS1olaiK58ar1WTQEtXTERnfNAKYVwUoKt/5cn+mUFAJT1KUqTkrV1MpKw/hI4YafXCs0EFbow5dbDalUqe5CNl9F+68tZkYFRvvvHBl3B4vwA0k7a2XVDwp+43SWqrSPusF49LnEj+fd4FVC4WvHUqf21soNlo6L/utEMhWDShgGvIuvjq9xMiqk5Be3Se218urwCXTDspTXSRu4ofolBIufWC/H3Bqn0bSKC+0DM8faX/O5dGJgRcrjX/LyIs8c1WXzNtoupoaljowi/gR5x95EjHRvZZVVOHIaX9mhxNENRj0/fCXGLw8VsCY66rDmMUJsRtr2zKXTyZQmvRa6zPBAltl9V"
       }
+    },
+    {
+      "hostType": "docker",
+      "matchHost": "ghcr.io/midnight-ntwrk",
+      "username": "MonikaJassova",
+      "password": "{{ secrets.GH_TOKEN }}"
     }
   ],
   "nix": {
     "enabled": true
+  },
+  "docker-compose": {
+    "fileMatch": [
+      "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"
+    ]
   },
   "lockFileMaintenance": { 
     "enabled": true 
