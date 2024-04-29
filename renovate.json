@@ -39,8 +39,8 @@
   "packageRules": [
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["midnight-ntwrk/midnight-node"],
-      "versioning": "loose"
+      "matchPackageNames": ["ghcr.io/midnight-ntwrk/midnight-node"],
+      "versioning": "semver"
     }
   ]
 }
