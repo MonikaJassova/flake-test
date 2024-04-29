@@ -19,3 +19,6 @@ const environment = await new GenericContainer('ghcr.io/midnight-ntwrk/proof-ser
 .start();
 
 console.log('proof server started')
+
+await new GenericContainer('ghcr.io/midnight-ntwrk/midnight-pubsub-indexer:1.1.0').start()
+await new GenericContainer('ghcr.io/midnight-ntwrk/midnight-node:0.2.6-70eb5bf-ariadne').start()
