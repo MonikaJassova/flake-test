@@ -37,8 +37,7 @@
     {
       "customType": "regex",
       "fileMatch": ["\\w+\\.mjs"],
-      "matchStrings": ["new GenericContainer\\('(?<currentValue>.*?)'\\)"],
-      "depNameTemplate": "docker",
+      "matchStrings": ["new GenericContainer\\('(?<depName>.*?):(?<currentValue>.*?)'\\)"],
       "datasourceTemplate": "docker"
     }
   ],
