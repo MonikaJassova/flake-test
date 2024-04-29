@@ -35,5 +35,12 @@
   },
   "lockFileMaintenance": { 
     "enabled": true 
-  }
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["midnight-ntwrk/midnight-node"],
+      "versioning": "semver"
+    }
+  ]
 }
