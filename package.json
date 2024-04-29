@@ -1,0 +1,7 @@
+{
+    "name": "docker-test",
+    "devDependencies": {
+      "testcontainers": "^10.7.2"
+    }
+  }
+  
