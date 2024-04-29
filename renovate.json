@@ -30,7 +30,7 @@
   },
   "docker-compose": {
     "fileMatch": [
-      "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"
+      "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$", "\\w+\\.mjs"
     ]
   },
   "lockFileMaintenance": { 
