@@ -15,7 +15,7 @@
     },
     {
       "hostType": "docker",
-      "matchHost": "ghcr.io/midnight-ntwrk",
+      "matchHost": "ghcr.io",
       "username": "MonikaJassova",
       "encrypted": {
         "password": "wcFMA/xDdHCJBTolARAAjISKKaOUEldpB1tf8HybZhhUaUGteUJRy8dFFtAP+GzeHrlxWmx8Q5EVsBOO8+etz5I+EOLXUqbz9woqexknyR3G9qsgrLnhSQenyXJVtwbrQdx/Jr/M2696PDz6RuMVsPf/CSIrMeguzvnmRxMpnkAGMjYQmZAu1KqMtrdF3dllr5Y8YBn1MgYp0PSCma4ugpNA9wv4VUydSC7T0loRnVfNOXQvqKRRDCZGGuqYAQ2djkYlyMnxEHgoEzZTCcVbjte9PPRutdrsQAdZy0BTvJgn2gZCrgRJsnf6/4nYA9Ixf1o5LsiC6UGWXgkpTF9v3vndWsbaauif39uk9Ey2mDXg6lxoj3fHtjXZwMx0bmciCPoR7mz9ei4G6GLt2bLbhAd9f4k+4WSZmvkWaC9Wex3CKukMgbzltkA8KDxM2ztpn1XerJGbDrU7J1nHUe1oIO12r8u1gZ7EbyrfTI7XLYx5QYUYJd0rOv4JrbNgVII4ykJcZk2zsrjNbwCDdOeXwE+jKjJBUhh36xwf1/3LgU1MYNW2nf60Mi28P0ZzT7PNtHboBxuuCRBP2LIjsUjXfaf4Jv58AKe7nyuvL4VtNfDyaPf08XxdVnxboNfYgqeJAWo5sN9bTBe8XfzviLffpfkf7rnqWpxYh1fsrzXNKd3wo8St5BZqABuu1pWqaDPSfAH4P+b+BI7WjIHS+tbeDnC7s2faXYfcA0V5rsKHyFPKVM3+FjoLmnUO/QXByTCCtkEoeszafNh/k9KXTrQtZL/jBwB5s9ZHrPbpR564YA8QGfRjzYGRbaWgPKqTsBa1R3cgdwGQd+HpfsTjt/DdtJfT0MMYtTdhgxs9zbM"
