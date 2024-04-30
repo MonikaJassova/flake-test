@@ -5,3 +5,4 @@ edition = "2021"
 
 [dependencies]
 zkir = { git = "https://github.com/input-output-hk/abcirdc.git", branch = "tmp-for-testing" }
+mn-ledger = { git = "https://github.com/input-output-hk/midnight-ledger-prototype", package = "midnight-ledger" }
