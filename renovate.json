@@ -66,8 +66,7 @@
       "datasourceTemplate": "github-tags",
       "fileMatch": [".*compactc-manager\\.sh"],
       "matchStrings": ["RELEASE=https:\/\/api\\.github\\.com\/repos\/midnight-ntwrk\/artifacts\/releases\/tags\/(?<currentValue>\\w+-v\\d+\\.\\d+\\.\\d+)"],
-      "depNameTemplate": "midnight-ntwrk/artifacts",
-      "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$"
+      "depNameTemplate": "midnight-ntwrk/artifacts"
     }
   ],
   "lockFileMaintenance": { 
@@ -85,7 +84,8 @@
     },
     {
       "matchDatasources": ["github-tags"],
-      "matchDepNames": ["midnight-ntwrk/artifacts"]
+      "matchDepNames": ["midnight-ntwrk/artifacts"],
+      "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$"
     }
   ]
 }
