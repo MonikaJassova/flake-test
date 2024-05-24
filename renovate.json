@@ -58,7 +58,7 @@
     {
       "customType": "regex",
       "fileMatch": [".*compactc-manager\\.sh"],
-      "matchStrings": ["RELEASE=https://api.github.com/repos/midnight-ntwrk/artifacts/releases/tags/\\('(?<depName>.*?)-(v?<currentValue>.*?)'\\)"],
+      "matchStrings": ["RELEASE=https:\/\/api\\.github\\.com\/repos\/midnight-ntwrk\/artifacts\/releases\/tags\/(?<depName>\\w+?)-v(?<currentValue>\\d+\\.\\d+\\.\\d+$)"],
       "datasourceTemplate": "github-releases",
       "registryUrlTemplate": "https://github.com/midnight-ntwrk/artifacts"
     }
