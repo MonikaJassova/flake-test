@@ -80,8 +80,7 @@
     },
     {
       "matchDatasources": ["github-tags"],
-      "matchDepNames": ["input-output-hk/compactc"],
-      "matchPackageNames": "compactc"
+      "matchDepNames": ["input-output-hk/compactc"]
     }
   ]
 }
