@@ -64,7 +64,7 @@
     {
       "customType": "regex",
       "fileMatch": [".*compactc-manager\\.sh"],
-      "matchStrings": ["RELEASE=https:\/\/api\\.github\\.com\/repos\/midnight-ntwrk\/artifacts\/releases\/tags\/(?<packageName>\\w+?)-v(?<currentValue>\\d+\\.\\d+\\.\\d+$)"],
+      "matchStrings": ["RELEASE=https:\/\/api\\.github\\.com\/repos\/midnight-ntwrk\/artifacts\/releases\/tags\/compactc-v(?<currentValue>\\d+\\.\\d+\\.\\d+$)"],
       "datasourceTemplate": "github-tags",
       "depNameTemplate": "input-output-hk/compactc"
     }
