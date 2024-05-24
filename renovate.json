@@ -78,6 +78,11 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["ghcr.io/midnight-ntwrk/midnight-node"],
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-(?<build>[a-f0-9]+)-(?<compatibility>\\w+)$"
+    },
+    {
+      "matchDatasources": ["github-releases"],
+      "matchDepNames": ["midnight-ntwrk/artifacts"],
+      "matchPackageNames": "compactc"
     }
   ]
 }
