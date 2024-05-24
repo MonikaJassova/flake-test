@@ -49,7 +49,7 @@
     },
     {
       "customType": "regex",
-      "fileMatch": ["compact/package.json"],
+      "fileMatch": ["compact\/package\\.json"],
       "matchStrings": ["\"version\": \"(?<currentValue>.*?)\""],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "compactc",
@@ -57,7 +57,7 @@
     },
     {
       "customType": "regex",
-      "fileMatch": ["**/compactc-manager.sh"],
+      "fileMatch": [".*compactc-manager\\.sh"],
       "matchStrings": ["RELEASE=https://api.github.com/repos/midnight-ntwrk/artifacts/releases/tags/\\('(?<depName>.*?)-(v?<currentValue>.*?)'\\)"],
       "datasourceTemplate": "github-releases",
       "registryUrlTemplate": "https://github.com/midnight-ntwrk/artifacts"
