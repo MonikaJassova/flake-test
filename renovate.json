@@ -58,16 +58,15 @@
       "customType": "regex",
       "fileMatch": ["compact\/package\\.json"],
       "matchStrings": ["\"version\": \"(?<currentValue>.*?)\""],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "midnight-ntwrk/artifacts",
-      "packageNameTemplate": "compactc"
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "input-output-hk/compactc"
     },
     {
       "customType": "regex",
       "fileMatch": [".*compactc-manager\\.sh"],
       "matchStrings": ["RELEASE=https:\/\/api\\.github\\.com\/repos\/midnight-ntwrk\/artifacts\/releases\/tags\/(?<packageName>\\w+?)-v(?<currentValue>\\d+\\.\\d+\\.\\d+$)"],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "midnight-ntwrk/artifacts"
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "input-output-hk/compactc"
     }
   ],
   "lockFileMaintenance": { 
@@ -80,8 +79,8 @@
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-(?<build>[a-f0-9]+)-(?<compatibility>\\w+)$"
     },
     {
-      "matchDatasources": ["github-releases"],
-      "matchDepNames": ["midnight-ntwrk/artifacts"],
+      "matchDatasources": ["github-tags"],
+      "matchDepNames": ["input-output-hk/compactc"],
       "matchPackageNames": "compactc"
     }
   ]
