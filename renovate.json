@@ -63,6 +63,7 @@
     },
     {
       "customType": "regex",
+      "datasourceTemplate": "github-tags",
       "fileMatch": [".*compactc-manager\\.sh"],
       "matchStrings": ["RELEASE=https:\/\/api\\.github\\.com\/repos\/midnight-ntwrk\/artifacts\/releases\/tags\/(?<compatibility>\\w+)-v(?<currentValue>\\d+\\.\\d+\\.\\d+)"],
       "depNameTemplate": "midnight-ntwrk/artifacts"
