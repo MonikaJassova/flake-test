@@ -80,7 +80,7 @@ services:
     ports:
       - 6379:6379
   node:
-    image: "ghcr.io/midnight-ntwrk/midnight-node:0.2.6-70eb5bf-ariadne"
+    image: "ghcr.io/midnight-ntwrk/midnight-node:0.3.3-5570501-ariadne"
     platform: linux/amd64
     ports:
      - "9944:9944"
