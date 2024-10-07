@@ -76,7 +76,7 @@ services:
       POSTGRES_PASSWORD: 'pubsub-indexer'
       POSTGRES_DB: 'pubsub-indexer'
   redis:
-    image: redis:7.2.4
+    image: redis:7.4.1
     ports:
       - 6379:6379
   node:
