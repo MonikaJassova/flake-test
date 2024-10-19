@@ -14,7 +14,7 @@ services:
       retries: 3
       start_period: 10s
   indexer:
-    image: "ghcr.io/midnight-ntwrk/midnight-pubsub-indexer:1.1.0"
+    image: "ghcr.io/midnight-ntwrk/midnight-pubsub-indexer:1.6.0"
     ports:
       - "8088"
     command: ['-Dlogback.configurationFile=logback-json-file.xml']
@@ -43,7 +43,7 @@ services:
       redis:
         condition: service_started
   pubsub:
-    image: 'ghcr.io/midnight-ntwrk/midnight-pubsub-indexer:1.1.0'
+    image: 'ghcr.io/midnight-ntwrk/midnight-pubsub-indexer:1.6.0'
     platform: linux/amd64
     expose: ['8088']
     ports:
