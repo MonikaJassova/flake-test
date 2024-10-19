@@ -4,7 +4,7 @@ import {
     Wait
   } from 'testcontainers';
 
-const environment = await new GenericContainer('ghcr.io/midnight-ntwrk/proof-server:2.0.6')
+const environment = await new GenericContainer('ghcr.io/midnight-ntwrk/proof-server:2.0.7')
 .withEnvironment({ RUST_BACKTRACE: 'full' })
 .withCommand(['midnight-proof-server --network devnet'])
 .withExposedPorts(6300)
